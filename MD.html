@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Map & File Dashboard</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f4f4f9;
+      padding: 15px;
+      color: #333;
+    }
+
+    /* Top Links Navigation */
+    .top-nav {
+      font-size: 14px;
+      margin-bottom: 12px;
+      word-spacing: 2px;
+    }
+
+    .top-nav a {
+      color: #0044cc;
+      text-decoration: underline;
+    }
+
+    .top-nav a:hover {
+      color: #d90000;
+    }
+
+    /* Audio Bar */
+    .audio-container {
+      margin-bottom: 15px;
+    }
+
+    .audio-container audio {
+      width: 100%;
+      max-width: 400px;
+      height: 36px;
+    }
+
+    /* 2x2 Grid Layout */
+    .media-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      width: 100%;
+    }
+
+    /* Individual Grid Box Styling */
+    .media-card {
+      background: #000;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      overflow: hidden;
+      position: relative;
+      min-height: 280px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .media-card iframe,
+    .media-card video {
+      width: 100%;
+      height: 100%;
+      min-height: 280px;
+      border: none;
+    }
+
+    /* Mobile Responsive Layout */
+    @media (max-width: 768px) {
+      .media-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+  <body>
+    <nav class="top-nav">
+      <a href="#">download word</a> | <a href="#">download powerpoint</a> |
+      <a href="#">download video</a> | <a href="#">download sound</a> |
+      <a href="#">download pdf</a> | <a href="#">download excel</a> |
+      <a href="#">download zip/rar</a> | <a href="#">download photo</a> |
+      <a href="#"> download file code</a>
+    </nav>
+
+    <div class="audio-container">
+      <audio controls>
+        <source src="song.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+    <main class="media-grid">
+      <div class="media-card">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3908.761761528383!2d104.890000!3d11.570000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTHCsDM0JzEyLjAiTiAxMDTCsDUzJzI0LjAiRQ!5e1!3m2!1sen!2skh!4v1600000000000"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        >
+        </iframe>
+      </div>
+
+      <div class="media-card">
+        <video controls poster="code-thumbnail.jpg">
+          <source src="3.Introduction to this section.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <!-- Bottom Left: YouTube Embed -->
+      <div class="media-card">
+        <iframe
+          src="https://www.youtube.com/embed/KNkpbDqL4Ds?list=RDKNkpbDqL4Ds"
+          title="YouTube video player"
+          allow=" 
+            accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+          "
+          allowfullscreen
+        >
+        </iframe>
+      </div>
+
+      <!-- Bottom Right: PDF / Document Viewer -->
+      <!-- pdf -->
+    <iframe 
+        src="FINAL TOPIC 2026 VERSION 2.pdf" 
+        width="600" 
+        height="450"
+        frameborder="1"
+        >
+    </iframe>
+      </div>
+    </main>
+  </body>
+</html>
